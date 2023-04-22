@@ -19,16 +19,6 @@
         position: relative;
         padding-left: 10px;
         z-index: 0;
-        &::before {
-            z-index: -1;
-            content: '';
-            position: absolute;
-            left: 0;
-            top: -25%;
-            width: 36px;
-            height: 36px;
-            border-radius: 100%;
-            background-color: $main-color;
-        }
+        @include circle;
     }
 }
