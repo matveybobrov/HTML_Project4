@@ -67,17 +67,17 @@ gulp.task('scripts', function() {
 })
 
 gulp.task('fonts', function() {
-    return gulp.src("src/fonts/*")
+    return gulp.src("src/fonts/**/*")
     .pipe(gulp.dest("dist/fonts"));
 })
 
 gulp.task('icons', function() {
-    return gulp.src("src/icons/*")
+    return gulp.src("src/icons/**/*")
     .pipe(gulp.dest("dist/icons"));
 })
 
 gulp.task('images', function() {
-    return gulp.src("src/img/*")
+    return gulp.src("src/img/**/*")
     .pipe(imagemin())
     .pipe(gulp.dest("dist/img"));
 })

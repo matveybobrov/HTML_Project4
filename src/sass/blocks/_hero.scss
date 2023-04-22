@@ -1,0 +1,28 @@
+.hero {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main_bg.jpg') center center/cover no-repeat;
+    padding-top: 205px;
+
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__buttons {
+        margin-top: 25px;
+        display: flex;
+        gap: 45px;
+        width: 250px;
+        align-items: center;
+    }
+    &__link {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            color: #000;
+        }
+    }
+}
