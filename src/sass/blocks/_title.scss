@@ -21,13 +21,12 @@
     }
     &_circle {
         position: relative;
-        padding-left: 10px;
         z-index: 0;
         @include circle;
         &_centered {
             &::before {
                 left: 50%;
-                transform: translateX(-35%);
+                transform: translateX(-50%);
             }
         }
     }
