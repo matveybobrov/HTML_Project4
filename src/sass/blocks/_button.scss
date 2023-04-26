@@ -6,4 +6,8 @@
     font-weight: 700;
     color: #000000;
     text-align: center;
+    transition: all .6s;
+    &:hover {
+        transform: translateY(-5px);
+    }
 }

@@ -13,8 +13,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
     menu.addEventListener('click', (e) => {
         const target = e.target;
-        if (target && target.classList.contains('menu__overlay')) {
+        if (target && (target.classList.contains('menu__overlay') || target.parentNode.classList.contains('menu__link'))) {
+            console.log(target);
             menu.classList.remove('active');
         }
     })
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        form.reset();
+    });
 })
