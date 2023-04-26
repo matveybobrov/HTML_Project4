@@ -2,19 +2,19 @@
     margin-top: 120px;
     &__wrapper {
         display: grid;
-        grid-template: repeat(2, 70px) / repeat(3, 350px);
-        gap: 30px 45px;
+        grid-template: repeat(2, 1fr) / repeat(3, 350px);
+        gap: 40px 45px;
     }
     &__item {
         display: grid;
-        grid-template: minmax(21px, auto) 14px / 200px 35px;
+        grid-template: repeat(2, minmax(14px, auto)) / repeat(2, auto);
         justify-content: space-between;
-        align-content: space-between;
+        row-gap: 25px;
     }
     &__item-title {
         padding-left: 14px;
         &::before {
-            top: -40%;
+            top: -8px;
         }
     }
     &__item-count {
