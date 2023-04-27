@@ -22,6 +22,26 @@
             column-gap: 15px;
         }
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 300px 300px;
+            column-gap: unset;
+            justify-content: space-between;
+        }
+    }
+    .stack {
+        &__wrapper {
+            grid-template: repeat(3, minmax(270px, auto)) / repeat(3, 270px);
+            justify-content: center;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template: repeat(2, 1fr) / repeat(3, 300px);
+            column-gap: unset;
+            justify-content: space-between;
+        }
+    }
 }
 // 769 to 992
 @media (max-width: 992px) {
@@ -42,6 +62,27 @@
         &__skills-item {
             grid-template-columns: 40px 320px;
             column-gap: 20px
+        }
+    }
+    .resume {
+        &__subtitle {
+            font-size: 30px;
+        }
+        &__wrapper {
+            padding: 60px 30px 0 30px;
+        }
+    }
+    .stack {
+        &__subtitle {
+            font-size: 30px;
+        }
+        &__wrapper {
+            grid-template: repeat(4, minmax(270px, auto)) / repeat(2, 270px);
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2, 340px);
         }
     }
 }
@@ -76,6 +117,18 @@
         &__skills-item {
             grid-template-columns: 40px 200px;
             column-gap: 20px;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 200px 200px;
+            padding: 60px 15px 0 15px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2, 260px);
         }
     }
 }
@@ -117,6 +170,53 @@
         &__skills {
             grid-template-columns: 100%;
             column-gap: unset;
+        }
+    }
+    .resume {
+        &__subtitle {
+            font-size: 24px;
+            line-height: 30px;
+            margin-top: 26px;
+        }
+        &__wrapper {
+            padding: 40px 10px 0 10px;
+            grid-template-columns: 100%;
+            row-gap: 40px;
+        }
+        &__column-title {
+            &::before {
+                top: 22px;
+            }
+        }
+        &__column {
+            ul {
+                li {
+                    &::after {
+                        top: -10px;
+                    }
+                }
+            }
+        }
+    }
+    .stack {
+        padding-top: 46px;
+        &__subtitle {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__wrapper {
+            justify-content: center;
+            grid-template-columns: 100%;
+        }
+        &__item {
+            justify-self: center;
+        }
+    }
+    .skills {
+        margin-top: 40px;
+        &__wrapper {
+            grid-template-columns: 100%;
         }
     }
 }
